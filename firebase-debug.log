@@ -1,0 +1,195 @@
+[debug] [2018-05-02T10:24:13.618Z] ----------------------------------------------------------------------
+[debug] [2018-05-02T10:24:13.629Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Brenda\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase init
+[debug] [2018-05-02T10:24:13.629Z] CLI Version:   3.18.4
+[debug] [2018-05-02T10:24:13.629Z] Platform:      win32
+[debug] [2018-05-02T10:24:13.630Z] Node Version:  v8.9.4
+[debug] [2018-05-02T10:24:13.631Z] Time:          Wed May 02 2018 05:24:13 GMT-0500 (Hora de verano central (México))
+[debug] [2018-05-02T10:24:13.631Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-05-02T10:24:13.661Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-05-02T10:24:13.662Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\proyectoangular\recetApp
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2018-05-02T10:25:46.144Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-05-02T10:25:46.145Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/Dyy8RvnazdkMMD6Ndtsq1PEUXT6LOQaud5_2Th6b7vU',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed May 02 2018 05:25:46 GMT-0500 (Hora de verano central (México))
+[debug] [2018-05-02T10:25:46.561Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-02T10:25:46.578Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+  
+ Wed May 02 2018 05:25:46 GMT-0500 (Hora de verano central (México))
+[debug] [2018-05-02T10:25:47.133Z] <<< HTTP RESPONSE 200
+[info] i  .firebaserc already has a default project, skipping
+[info] 
+=== Database Setup
+[info] 
+[info] Firebase Realtime Database Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[info] +  Database Rules for undefined have been downloaded to dist.
+[info] Future modifications to dist will update Database Rules when you run
+[info] firebase deploy.
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2018-05-02T10:26:10.197Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
+  
+ Wed May 02 2018 05:26:10 GMT-0500 (Hora de verano central (México))
+[debug] [2018-05-02T10:26:10.452Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-02T10:26:10.756Z] Error: ENOENT: no such file or directory, open 'C:\proyectoangular\recetApp\dist\index.html'
+    at Object.fs.openSync (fs.js:646:18)
+    at Object.fs.writeFileSync (fs.js:1291:33)
+    at Object.createFileSync (C:\Users\Brenda\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\ensure\file.js:34:6)
+    at Config.writeProjectFile (C:\Users\Brenda\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:194:6)
+    at C:\Users\Brenda\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:214:12
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-05-02T10:26:18.450Z] ----------------------------------------------------------------------
+[debug] [2018-05-02T10:26:18.457Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Brenda\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase init
+[debug] [2018-05-02T10:26:18.458Z] CLI Version:   3.18.4
+[debug] [2018-05-02T10:26:18.458Z] Platform:      win32
+[debug] [2018-05-02T10:26:18.458Z] Node Version:  v8.9.4
+[debug] [2018-05-02T10:26:18.459Z] Time:          Wed May 02 2018 05:26:18 GMT-0500 (Hora de verano central (México))
+[debug] [2018-05-02T10:26:18.459Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-05-02T10:26:18.487Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-05-02T10:26:18.489Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\proyectoangular\recetApp
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2018-05-02T10:26:26.209Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+  
+ Wed May 02 2018 05:26:26 GMT-0500 (Hora de verano central (México))
+[debug] [2018-05-02T10:26:26.885Z] <<< HTTP RESPONSE 200
+[info] i  .firebaserc already has a default project, skipping
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2018-05-02T10:26:35.206Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
+  
+ Wed May 02 2018 05:26:35 GMT-0500 (Hora de verano central (México))
+[debug] [2018-05-02T10:26:35.436Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-02T10:26:35.726Z] Error: ENOENT: no such file or directory, open 'C:\proyectoangular\recetApp\dist\index.html'
+    at Object.fs.openSync (fs.js:646:18)
+    at Object.fs.writeFileSync (fs.js:1291:33)
+    at Object.createFileSync (C:\Users\Brenda\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\ensure\file.js:34:6)
+    at Config.writeProjectFile (C:\Users\Brenda\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:194:6)
+    at C:\Users\Brenda\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:214:12
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-05-02T10:27:08.030Z] ----------------------------------------------------------------------
+[debug] [2018-05-02T10:27:08.037Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Brenda\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase init
+[debug] [2018-05-02T10:27:08.038Z] CLI Version:   3.18.4
+[debug] [2018-05-02T10:27:08.038Z] Platform:      win32
+[debug] [2018-05-02T10:27:08.038Z] Node Version:  v8.9.4
+[debug] [2018-05-02T10:27:08.040Z] Time:          Wed May 02 2018 05:27:08 GMT-0500 (Hora de verano central (México))
+[debug] [2018-05-02T10:27:08.040Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-05-02T10:27:08.068Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-05-02T10:27:08.069Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\proyectoangular\recetApp
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2018-05-02T10:27:27.227Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+  
+ Wed May 02 2018 05:27:27 GMT-0500 (Hora de verano central (México))
+[debug] [2018-05-02T10:27:27.773Z] <<< HTTP RESPONSE 200
+[info] i  .firebaserc already has a default project, skipping
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2018-05-02T10:27:36.781Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
+  
+ Wed May 02 2018 05:27:36 GMT-0500 (Hora de verano central (México))
+[debug] [2018-05-02T10:27:37.016Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-02T10:27:37.324Z] Error: ENOENT: no such file or directory, open 'C:\proyectoangular\recetApp\dist\index.html'
+    at Object.fs.openSync (fs.js:646:18)
+    at Object.fs.writeFileSync (fs.js:1291:33)
+    at Object.createFileSync (C:\Users\Brenda\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\ensure\file.js:34:6)
+    at Config.writeProjectFile (C:\Users\Brenda\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:194:6)
+    at C:\Users\Brenda\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:214:12
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+[error] 
+[error] Error: An unexpected error has occurred.

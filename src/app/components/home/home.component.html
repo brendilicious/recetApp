@@ -1,0 +1,47 @@
+
+<div class="jumbotron p-3 p-md-3 text-white rounded bg-dark mt-3">
+    <div class="col-md-5 px-0">
+        <h1 class="display-4 font-italic">Colegio para Arbitros</h1>
+        <p class="lead my-3">Centro de Capacitación de la Femexfut, sede de la Comisión de Árbitros, se entregaron los Gafetes de FIFA 2009.</p> 
+    </div>
+</div>
+<div id="container">
+    <div ng2-carouselamos class="slides-wrapper"
+      [items]="items"
+      [width]="900"
+      [$prev]="prev"
+      [$next]="next"
+      [$item]="item">
+    </div>
+  <ng-template #prev>
+      <img src ="assets/images/if_double-arrow-left_383152.png" id="left">
+  </ng-template>
+
+  <ng-template #next>
+      <img src ="assets/images/if_double-arrow-right_383079.png" id="right">
+  </ng-template>
+
+  <ng-template #item let-item let-i="index">
+    <div class="items">
+      <img src="{{ item.name }}">
+    </div>        
+  </ng-template>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="card d-flex flex-column align-items-start">
+      <div class="card-body d-flex flex-column align-items-start">
+        <strong class="d-inline-block mb-2 text-primary">
+          <span class="badge badge-pill badge-dark">TEMPORADA</span>
+        </strong>
+        <h3 class="mb-0">TITULO </h3>
+        <div class="mb-1 text-muted">
+          <span class="badge badge-pill badge-success">FECHA</span>
+        </div>
+        <p class="card-text mb-auto">DESCRIPCION</p>
+        <a href="" class="btn-btn-info">LEER MÁS</a>
+      </div>
+    </div>
+  </div>
+</div>
