@@ -11,7 +11,7 @@ import { AdminComponent } from './components/admin/admin.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { PrivadoComponent } from './components/privado/privado.component';
-
+import { AuthGuard } from './guards/auth.guard';
 
 
 const routes: Routes = [
@@ -20,7 +20,7 @@ const routes: Routes = [
 {path: 'nueva', component:NuevaRecetaComponent},
 {path: 'login', component:LoginComponent},
 {path: 'register', component:RegisterComponent},
-{path: 'privado', component:PrivadoComponent},
+{path: 'privado', component:PrivadoComponent, canActivate: [AuthGuard]},
 {path: 'admin', component:AdminComponent},
 {path: 'details/:id', component:DetailsComponent},
 {path: 'edit/:id', component:EditComponent},
