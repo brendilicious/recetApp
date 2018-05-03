@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../../servicios/auth.service';
 import { Router } from '@angular/router';
 import { AngularFireAuth } from 'angularfire2/auth';
-//FlashMessagesService
+import { FlashMessagesService } from 'angular2-flash-messages';
+
 
 @Component({
   selector: 'app-login',
@@ -13,10 +14,12 @@ export class LoginComponent implements OnInit {
 
   public email: string;
   public password: string;
-  constructor(public authService: AuthService,
+  
+  constructor(
+    public authService: AuthService,
     public router: Router,
-    //public flashMensaje: FlashMessagesService,
-   public afAuth: AngularFireAuth) { }
+    public flashMensaje: FlashMessagesService,
+    public afAuth: AngularFireAuth) { }
 
   ngOnInit() {
   }

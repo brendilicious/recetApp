@@ -2,8 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
-import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 
+import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -19,13 +19,15 @@ import { LoginComponent } from './components/login/login.component';
 import { environment } from '../environments/environment.prod';
 import { RegisterComponent } from './components/register/register.component';
 import { PrivadoComponent } from './components/privado/privado.component';
+
 import { AuthService } from './servicios/auth.service';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuth, AngularFireAuthModule } from 'angularfire2/auth';
-//FlashMessagesModule,
-//FlasMessagesService,
-//SeguroPipe,
+import { AuthGuard } from './guards/auth.guard';
 
+import { FlashMessagesModule, FlashMessagesService } from 'angular2-flash-messages';
+import { ToastrModule } from 'ngx-toastr';
+//SeguroPipe,
 
 @NgModule({
   declarations: [
@@ -49,15 +51,16 @@ import { AngularFireAuth, AngularFireAuthModule } from 'angularfire2/auth';
     AppRoutingModule,
     FormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    //FlashMessagesModule,
+    FlashMessagesModule,
     AngularFireAuthModule,
-    //ToastrModule.forRoot(),
+    ToastrModule.forRoot(),
     //CareModule
 
   ],
-  providers: [AuthService,
-  //AuthGuard,
-  //FlashMessagesService,
+  providers: [
+    AuthService,
+    AuthGuard,
+    FlashMessagesService,
   ],
   bootstrap: [AppComponent]
 })
