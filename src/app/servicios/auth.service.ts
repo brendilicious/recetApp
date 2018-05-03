@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {AngularFireAuth} from 'angularfire2/auth';
 import * as firebase from 'firebase/app';
 import 'rxjs/add/operator/map';
+
 import { Router } from '@angular/router';
 import {Observable} from 'rxjs/Observable';
 import {AngularFirestore, AngularFirestoreDocument} from 'angularfire2/firestore' ;
@@ -30,8 +31,6 @@ export class AuthService {
     loginTwitter(){
       return this.afAuth.auth.signInWithPopup( new firebase.auth.TwitterAuthProvider());
     }
-  
-  
     loginFacebook(){
       return this.afAuth.auth.signInWithPopup( new firebase.auth.FacebookAuthProvider());
     }
@@ -58,5 +57,4 @@ export class AuthService {
     logout(){
       return this.afAuth.auth.signOut();
     }
-  
 }

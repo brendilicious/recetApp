@@ -19,7 +19,8 @@ export class LoginComponent implements OnInit {
    public afAuth: AngularFireAuth) { }
 
   ngOnInit() {
-  }onSubmitLogin() {
+  }
+  onSubmitLogin() {
     this.authService.loginEmail(this.email, this.password)
     .then( (res) =>{
       this.flashMensaje.show('Usuario logeado correctamente.',
