@@ -42,6 +42,8 @@ emailPattern =  "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$";
    // }
  // }
 
+
+ //este formulario aplica para el mismo del login. 
  //OnSubmit(form: NgForm) {
  //this.userService.registerUser(form.value)
     //.subscribe((data:any) => {
@@ -55,11 +57,14 @@ emailPattern =  "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$";
   onSubmitAddUser() {
     this.authService.registerUser(this.email,this.password)
     .then((res) =>{
+      console.log('Bien!!');
+      console.log(res);
+
       this.flashMensaje.show('Usuario creado correctamente.',
       {cssClass: 'alert-success', timeout: 4000});
         this.router.navigate(['/privado']);
-    }).catch( (res) =>{
-      this.flashMensaje.show(err.messages,
+    }).catch( (err) =>{
+      this.flashMensaje.show(err.message,
       {cssClass: 'alert-danger', timeout: 4000});
     });
   }

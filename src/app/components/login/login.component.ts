@@ -4,7 +4,6 @@ import { Router } from '@angular/router';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { FlashMessagesService } from 'angular2-flash-messages';
 
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -31,7 +30,7 @@ export class LoginComponent implements OnInit {
       this.router.navigate(['/privado']);
     })
     .catch((err) =>{ 
-      this.flashMensaje.show(err.messages,
+      this.flashMensaje.show(err.message,
       {cssClass: 'alert-danger', timeout: 4000});
       console.log(err);
       this.router.navigate(['/login']);

@@ -7,5 +7,6 @@ export const environment = {
     projectId: "logear-5a8dc",
     storageBucket: "logear-5a8dc.appspot.com",
     messagingSenderId: "111762546490"
+
   }
 };
